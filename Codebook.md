@@ -9,18 +9,28 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The R script called run_analysis.R does the following.
 
-#1. Merges the training file dftrainX and the test file dftestX to create one data set.
-dfTrainX
-dfTrainY
+#1. Merges the training file and the test file to create one data set and one ID set.
+dfXTrain
+dfXTest
+dfX. Data Set.
+DfYTrain
+dfYTest
+dfY. ID Set.
+Merges Subject ID to one Data Set: dfSubjectTrain and dfSubjectTest to dfSubject
+
 #2. Extract data to align required Features, TestSubject and TrainSubject
-Features
-TestSubject
-TrainSubject
+Assign Data as dataframe where Headers of mean and std are defined for dfX.
+
+
 #3. Gives Descriptive Names for each variable.
+using the names command:
+"activity"
+"subject"
+clean mean and std measurement descriptors using "gsub"
+
 #4. Defines Headers, Labels, & Subject 
+Assign "Measured" as dataframe through a bind of DfSubject, dfY, and Data. 
+
 #5. Extracts only the measurements on the mean and standard deviation for each measurement.
-#6. Appropriately labels the data set with descriptive variable names.
-names(dfX)<-"measured"
-names(dfY)<-"activity"
-names(Subject)<-"subject"
-#7  As a last step creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Assign "Average" as data for average mean and std metrics for each subject and activity.
+

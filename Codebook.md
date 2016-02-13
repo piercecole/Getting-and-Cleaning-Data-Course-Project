@@ -19,7 +19,7 @@ dfY. ID Set.
 Merges Subject ID to one Data Set: dfSubjectTrain and dfSubjectTest to dfSubject
 
 #2. Extract data to align required Features, TestSubject and TrainSubject
-Assign Data as dataframe where Headers of mean and std are defined for dfX.
+Assign "Data" as df where Headers of mean and std are defined for dfX.
 
 
 #3. Gives Descriptive Names for each variable.
